@@ -1,0 +1,30 @@
+body {
+    background-image: url("https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/7/77/77874/pattern575_10-f.jpg");
+    background-repeat: repeat;
+}
+#header{
+    color:darkturquoise;
+    text-align: center;
+    font-size: large;
+
+}
+
+#container{
+    text-align: center;
+    color: white;
+    border: groove;
+    font-size: medium;
+    width: 100%;
+    height: 100%;
+}
+#form {
+    line-height: 25px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    align-self: center;
+    border: solid black 5px;
+    background-color: #E47923;
+    height: 200px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>FLEX</title>
+<div id="header">
+    <h1>FOOD TRACKER</h1>
+</div>
+<head>
+    <link rel="stylesheet" href="Food%20Tracker.css">
+</head>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script>
+        function submitButton() {
+            var foodName = $('#foodName').val();
+            var description = $('#description').val();
+            var purchase = $('#purchase').val();
+            var expire = $('#expire').val();
+
+            $('#input').append('<tr><td>' + foodName + '</td> <td> ' + description + '</td> <td> ' + purchase + '</td><td> ' + expire + '</td> </tr>')
+        }
+    </script>
+<body>
+<div id="form">
+    <form>
+    <div id="container">
+    food name:
+    <input type="text" id="foodName">
+    Description:
+    <input type="text" id="description">
+    Purchase Date:
+    <input type="text" id="purchase">
+    Expiration Date:
+    <input type="text" id="expire">
+
+    <button type="button" onclick="submitButton()">Submit</button>
+
+</form>
+</div>
+<table id="container">
+    <thead>
+    <tr>
+        <th>Food Name</th>
+        <th>Description</th>
+        <th>Purchase Date </th>
+        <th>Expiration Date</th>
+
+    </tr>
+    </thead>
+    <tbody id="input">
+
+    </tbody>
+
+</table>
+    </div>
+
+
+</body>
+</html>
